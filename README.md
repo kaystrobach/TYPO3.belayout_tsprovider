@@ -2,7 +2,14 @@ TYPO3.belayout_tsprovider
 =========================
 
 example usage, feel free to split in several files
+PageTS inclusion:
 
+```
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:themes_gridelements/Configuration/BackendLayouts">
+```
+
+
+PageTS
 ```
 backendlayouts {
     Layout1 {
