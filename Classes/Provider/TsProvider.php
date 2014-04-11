@@ -7,11 +7,9 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\BackendLayout\BackendLayout;
 use TYPO3\CMS\Backend\View\BackendLayout\BackendLayoutCollection;
 use TYPO3\CMS\Backend\View\BackendLayout\DataProviderContext;
-use TYPO3\CMS\Backend\View\BackendLayout\DataProviderInterface;
-use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class TsProvider implements DataProviderInterface, SingletonInterface {
+class TsProvider implements \TYPO3\CMS\Backend\View\BackendLayout\DataProviderInterface {
 	/**
 	 * Adds backend layouts to the given backend layout collection.
 	 *
