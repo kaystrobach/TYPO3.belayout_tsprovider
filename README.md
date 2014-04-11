@@ -15,16 +15,6 @@ backendlayouts {
     Layout1 {
         icon = EXT:themes_gridelements/ext_icon.png
         name = Layout 1
-        TYPO3.belayout_tsprovider
-=========================
-
-example usage, feel free to split in several files
-
-```
-backendlayouts {
-    Layout1 {
-        icon = EXT:themes_gridelements/ext_icon.png
-        name = Layout 1
         backend_layout (
             colCount = 5
             rowCount = 3
@@ -66,10 +56,6 @@ backendlayouts {
                 }
             }
         )
-    }
-}
-```
-
     }
 }
 ```
