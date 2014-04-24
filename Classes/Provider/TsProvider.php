@@ -87,7 +87,12 @@ class TsProvider implements \TYPO3\CMS\Backend\View\BackendLayout\DataProviderIn
 			BackendUtility::getPagesTSconfig($uid)
 		);
 
-		return $backendlayoutTS['properties'];
+		$backendLayouts = array();
+		foreach($backendlayoutTS['properties'] as $key=>$backendLayout) {
+			$backendLayouts[substr($key, 0, -1)] = $backendLayout;
+		}
+
+		return $backendLayouts;
 	}
 
 }
