@@ -88,8 +88,10 @@ class TsProvider implements \TYPO3\CMS\Backend\View\BackendLayout\DataProviderIn
 		);
 
 		$backendLayouts = array();
-		foreach($backendlayoutTS['properties'] as $key=>$backendLayout) {
-			$backendLayouts[substr($key, 0, -1)] = $backendLayout;
+		if(isset($backendlayoutTS['properties'])) {
+			foreach($backendlayoutTS['properties'] as $key=>$backendLayout) {
+				$backendLayouts[substr($key, 0, -1)] = $backendLayout;
+			}
 		}
 
 		return $backendLayouts;
