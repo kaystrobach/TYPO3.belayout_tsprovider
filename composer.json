@@ -1,0 +1,11 @@
+{
+    "name": "KayStrobach/belayoutTsprovider",
+    "type": "typo3-cms-extension",
+    "description": "Provides BE Layouts via a PageTS",
+    "homepage": "https://github.com/kaystrobach/TYPO3.belayout_tsprovider/",
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3 CMS", "backendlayout"],
+    "support": {
+        "issues": "https://github.com/kaystrobach/TYPO3.belayout_tsprovider/issues"
+    }
+}
